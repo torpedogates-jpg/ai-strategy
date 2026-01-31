@@ -36,7 +36,7 @@ def remove_old_cache(folder: str, older_than_days: int = 1):
             except (ValueError, OSError):
                 continue
 
-BASE_DIR = os.getenv('TRADE_DATA', "/Users/kartik/trade/data-source/data")
+BASE_DIR = os.getenv('TRADE_DATA', "/trade_data")
 
 def find_latest_file(file_pattern):
     """
